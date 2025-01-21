@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy Birthday Ate!</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="images/cake.gif" />
+  </head>
+  <body>
+    <div class="welcome-screen" id="welcomeScreen">
+      <h1 class="welcome-text">Happy Birthday Ate ko🎉</h1>
+      <div class="enter-button" id="enterButton">Enter 🎂</div>
+    </div>
+
+    <div class="countdown" id="countdown">
+      <div class="countdown-number">10</div>
+    </div>
+
+    <div class="main-content" id="mainContent" style="display: none">
+      <audio id="birthdaySong" loop>
+        <source src="images/hbd.mp3" type="audio/mp3" />
+      </audio>
+
+      <div class="music-control">
+        <button id="toggleMusic">♫ Pause Music</button>
+        <span class="timer" id="timer">00:25 / 01:28</span>
+      </div>
+
+      <img src="images/stars.png" alt="Star" class="star-img" />
+
+      <div class="content-container">
+        <div class="cake-container">
+          <img src="images/cake.gif" alt="Birthday Cake" class="cake-gif" />
+        </div>
+        <h1>Happy Birthday Ate<br />🎉🎂🎉🎂🎉🎂</h1>
+        <p class="birthday-message">
+          Wishing you a day filled with joy and laughter! I miss you na, Ito
+          lang muna regalo ko sayo ngayon HAHAHA, Simple Happy Birthday Code.
+          love you Ate ❤️!!!
+        </p>
+        <div class="gift-container">
+          <img src="images/gift.png" alt="Gift" class="gift-img" />
+          <img src="images/balloons.png" alt="Balloons" class="balloons-img" />
+          <img
+            src="images/amusement-park.png"
+            alt="Amusement Park"
+            class="park-img"
+          />
+        </div>
+      </div>
+    </div>
+
+    <canvas id="confettiCanvas"></canvas>
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles-confetti@2.12.0/tsparticles.confetti.bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
